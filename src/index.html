@@ -1,18 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Elixus</title>
-    <meta property="og:title" content="Elixus" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://elixus.be" />
-    <meta property="og:image" content="https://elixus.be/assets/logo.png" />
-  </head>
-  <body class="flex flex-col justify-center items-center w-screen h-screen dark:bg-black">
-    <img class="h-64" src="/assets/elixus-no-text.svg" />
-    <span class="text-2xl dark:text-white">
-      <span class="text-gray-500">Elixus</span> coming soon
-    </span>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Elixus</title>
+		<meta property="og:title" content="Elixus" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://elixus.be" />
+		<meta property="og:image" content="https://elixus.be/assets/logo.png" />
+		<link rel="shortcut icon" type="image/jpg" href="/assets/logo.png" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	</head>
+	<body class="flex flex-col items-center w-screen min-h-screen bg-gradient-to-b from-blue-gray-50 dark:from-gray-900 to-bg-gray-100 dark:to-gray-800">
+		<nav class="flex justify-between items-center container p-2">
+			<a href="/">
+				<span class="sr-only">Elixus</span>
+				<img class="h-16 sm:h-20" src="/assets/logo.png" />
+			</a>
+
+			<div class="hidden sm:flex flex-1 justify-center items-center max-w-3xl">
+				<a href="/" class="font-medium text-gray-500 hover:text-gray-600 mx-auto">
+					Home
+				</a>
+				<a href="/" class="font-medium text-gray-500 hover:text-gray-600 mx-auto">
+					About
+				</a>
+				<a href="/" class="font-medium text-gray-500 hover:text-gray-600 mx-auto">
+					Contact
+				</a>
+			</div>
+
+			<button class="bg-white text-blue-500 p-2 rounded-md shadow">
+				Contact me
+			</button>
+		</nav>
+
+		<header class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+			<h1 class="font-semibold text-4xl text-center">
+				<span class="inline text-gray-500">Software that suits you</span><span class="inline text-blue-500">r business</span>
+			</h1>
+
+			<h4 class="text-center text-2xl text-gray-600 mt-2">
+				Whether you're running a blog, small website for yourself or a webshop with thousands of visitors,
+				<span class="text-blue-gray-500">Elixus</span> has you covered with software that scales to your needs.
+			</h4>
+		</header>
+
+		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+	</body>
 </html>

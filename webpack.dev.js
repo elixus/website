@@ -20,7 +20,8 @@ module.exports = {
     },
     // https://webpack.js.org/configuration/dev-server/
     devServer: {
-        port: 8080
+        port: 8080,
+        host: '0.0.0.0'
     },
     // https://webpack.js.org/concepts/plugins/
     plugins: [

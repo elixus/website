@@ -1,4 +1,6 @@
 // tailwind.config.js
+const colors = require('tailwindcss/colors');
+
 module.exports = {
     darkMode: 'media',
     purge: [
@@ -8,7 +10,16 @@ module.exports = {
         removeDeprecatedGapUtilities: true,
         purgeLayersByDefault: true,
     },
-    theme: {},
+    theme: {
+        extend: {
+            fontFamily: {
+                roboto: 'Roboto'
+            },
+            colors: {
+                'blue-gray': colors.blueGray
+            }
+        }
+    },
     variants: {},
     plugins: [],
 }
