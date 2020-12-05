@@ -10,13 +10,18 @@
 		<meta property="og:image" content="https://elixus.be/assets/logo.png" />
 		<link rel="shortcut icon" type="image/jpg" href="/assets/logo.png" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://cdn.jsdelivr.net">
+		<link rel="preload" href="/assets/app.svg" as="image" />
+		<link rel="preload" href="/assets/elixus.svg" as="image" />
+		<link rel="preload" href="/assets/payments.svg" as="image" />
+		<link rel="preload" href="/assets/website.svg" as="image" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	</head>
-	<body class="flex flex-col items-center w-screen min-h-screen bg-gradient-to-b from-blue-gray-50 dark:from-gray-900 to-bg-gray-100 dark:to-gray-800">
+	<body class="flex flex-col items-center w-screen min-h-screen bg-gradient-to-r from-blue-gray-50 dark:from-gray-900 to-bg-gray-100 dark:to-gray-800 overflow-x-hidden">
 		<nav class="flex justify-between items-center container p-2">
 			<a href="/">
 				<span class="sr-only">Elixus</span>
-				<img class="h-16 sm:h-20" src="/assets/logo.png" />
+				<img class="h-16 sm:h-20" src="/assets/logo.png" alt="Elixus logo" />
 			</a>
 
 			<div class="hidden sm:flex flex-1 justify-center items-center max-w-3xl">
@@ -36,16 +41,146 @@
 			</button>
 		</nav>
 
-		<header class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-			<h1 class="font-semibold text-4xl text-center">
-				<span class="inline text-gray-500">Software that suits you</span><span class="inline text-blue-500">r business</span>
+		<header class="mt-16 mx-auto max-w-7xl px-4 sm:mt-8">
+			<h1 class="font-semibold text-4xl text-center font-roboto">
+				<span class="inline text-gray-500">Software that suits you</span><span class="inline text-blue-500">r
+				business</span>
 			</h1>
-
-			<h4 class="text-center text-2xl text-gray-600 mt-2">
-				Whether you're running a blog, small website for yourself or a webshop with thousands of visitors,
-				<span class="text-blue-gray-500">Elixus</span> has you covered with software that scales to your needs.
-			</h4>
 		</header>
+
+		<main class="flex flex-col justify-start flex-1 container mt-8 space-y-6 sm:px-5 lg:flex-row lg:flex-wrap lg:justify-center lg:space-y-0">
+			<section class="flex flex-col-reverse sm:flex-row items-center lg:w-1/2 lg:px-4">
+				<section class="flex flex-col p-2 text-center mt-2 sm:w-1/2">
+					<h6 class="text-2xl sm:text-left font-bold text-gray-800">Whether it's building a website</h6>
+					<p class="text-left text-gray-600 px-2 sm:px-0">
+						From personal websites to company landing pages, Elixus can build the site that's right for you.
+						Performant, clean and suited to your needs, Elixus has you covered.
+					</p>
+				</section>
+				<section class="w-1/2">
+					<img src="/assets/website.svg" alt="Image of a user building a website" />
+				</section>
+			</section>
+			<section class="flex flex-col-reverse sm:flex-row-reverse items-center lg:w-1/2 lg:px-4">
+				<section class="flex flex-col p-2 text-center sm:text-left mt-2 sm:w-1/2">
+					<h6 class="text-2xl font-bold text-gray-800">That cool app idea you had</h6>
+					<p class="text-left text-gray-600 px-2 sm:px-0">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis dolorum illum
+						in ipsam, iusto laboriosam necessitatibus, nihil nobis odio officia officiis porro reiciendis
+						rerum tenetur ullam velit veniam.
+					</p>
+				</section>
+				<section class="w-1/2">
+					<img src="/assets/devices.svg" alt="Image of a user with a phone, tablet and desktop" />
+				</section>
+			</section>
+			<section class="flex flex-col-reverse sm:flex-row items-center lg:w-1/2 lg:px-4">
+				<section class="flex flex-col p-2 text-center mt-2 sm:w-1/2">
+					<h6 class="text-2xl sm:text-left font-bold text-gray-800">Your very own webshop</h6>
+					<p class="text-left text-gray-600 px-2 sm:px-0">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam beatae commodi
+						corporis cumque doloribus eligendi esse maiores nam nostrum quaerat quasi quisquam, quos
+						sapiente sed sunt voluptas. Blanditiis, quisquam?
+					</p>
+				</section>
+				<section class="w-1/2">
+					<img src="/assets/marketing.svg" alt="Image of a user with graphs" />
+				</section>
+			</section>
+			<section class="flex flex-col-reverse sm:flex-row-reverse items-center lg:w-1/2 lg:px-4">
+				<section class="flex flex-col p-2 text-center sm:text-left mt-2 sm:w-1/2">
+					<h6 class="text-2xl font-bold text-gray-800">Or just help with problems</h6>
+					<p class="text-left text-gray-600 px-2 sm:px-0">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis dolorum illum
+						in ipsam, iusto laboriosam necessitatibus, nihil nobis odio officia officiis porro reiciendis
+						rerum tenetur ullam velit veniam.
+					</p>
+				</section>
+				<section class="w-1/2">
+					<img src="/assets/bugfixing.svg" alt="Image of a developer fixing bugs" />
+				</section>
+			</section>
+
+			<section class="flex flex-col px-5">
+				<h4 class="text-3xl text-center font-bold">Adapted to your tech stack</h4>
+				<section class="flex flex-wrap justify-center">
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://www.docker.com/">
+						<picture>
+							<source srcset="/assets/logos/docker.webp" type="image/webp">
+							<source srcset="/assets/logos/docker.png" type="image/png">
+							<img src="/assets/logos/docker.png" alt="Docker logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://elixir-lang.org/">
+						<picture>
+							<source srcset="/assets/logos/elixir.webp" type="image/webp">
+							<source srcset="/assets/logos/elixir.png" type="image/png">
+							<img src="/assets/logos/elixir.png" alt="Elixir language logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://flutter.dev/">
+						<picture>
+							<source srcset="/assets/logos/flutter.webp" type="image/webp">
+							<source srcset="/assets/logos/flutter.png" type="image/png">
+							<img src="/assets/logos/flutter.png" alt="Flutter logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://laravel.com/">
+						<picture>
+							<source srcset="/assets/logos/laravel.webp" type="image/webp">
+							<source srcset="/assets/logos/laravel.png" type="image/png">
+							<img src="/assets/logos/laravel.png" alt="Laravel logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet">
+						<picture>
+							<source srcset="/assets/logos/netcore.webp" type="image/webp">
+							<source srcset="/assets/logos/netcore.png" type="image/png">
+							<img src="/assets/logos/netcore.png" alt=".NET Core logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://phoenixframework.org/">
+						<picture>
+							<source srcset="/assets/logos/phoenix.webp" type="image/webp">
+							<source srcset="/assets/logos/phoenix.png" type="image/png">
+							<img src="/assets/logos/phoenix.png" alt="Phoenix logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://www.postgresql.org/">
+						<picture>
+							<source srcset="/assets/logos/postgresql.webp" type="image/webp">
+							<source srcset="/assets/logos/postgresql.png" type="image/png">
+							<img src="/assets/logos/postgresql.png" alt="Postgresql logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://www.microsoft.com/en-us/sql-server/sql-server-2019">
+						<picture>
+							<source srcset="/assets/logos/sqlserver.webp" type="image/webp">
+							<source srcset="/assets/logos/sqlserver.png" type="image/png">
+							<img src="/assets/logos/sqlserver.png" alt="SQL Server logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://tailwindcss.com/">
+						<picture>
+							<source srcset="/assets/logos/tailwind.webp" type="image/webp">
+							<source srcset="/assets/logos/tailwind.png" type="image/png">
+							<img src="/assets/logos/tailwind.png" alt="TailwindCSS logo" />
+						</picture>
+					</a>
+					<a class="flex justify-center items-center p-2 w-1/3 md:w-1/5 lg:w-1/12" target="_blank" href="https://vuejs.org/">
+						<picture>
+							<source srcset="/assets/logos/vue.webp" type="image/webp">
+							<source srcset="/assets/logos/vue.png" type="image/png">
+							<img src="/assets/logos/vue.png" alt="VueJS logo" />
+						</picture>
+					</a>
+				</section>
+			</section>
+		</main>
+
+		<footer class="flex w-screen px-8 py-2 justify-center sm:justify-start text-gray-500 border-t">
+			&copy; Wannes Gennar 2020
+		</footer>
 
 		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
 	</body>
