@@ -50,6 +50,12 @@ module.exports = {
             chunks: ['styles'],
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/contact.html',
+            inject: true,
+            chunks: ['styles'],
+            filename: 'contact.html'
+        }),
         new CopyPlugin({
             patterns: [
                 { from: 'assets', to: 'assets' },

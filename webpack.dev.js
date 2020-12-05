@@ -31,6 +31,12 @@ module.exports = {
             inject: true,
             chunks: ['styles'],
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/contact.html',
+            inject: true,
+            chunks: ['styles'],
+            filename: 'contact.html'
         })
     ]
 };
