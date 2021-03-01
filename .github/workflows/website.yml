@@ -28,7 +28,7 @@ jobs:
       with:
           target_branch: gh-pages
           build_dir: dist
-          fqdn: "elixus.be"
+          fqdn: "www.elixus.be"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
