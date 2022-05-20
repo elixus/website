@@ -1,39 +1,15 @@
 {
-  "name": "elixus-be",
-  "version": "1.0.0",
+  "name": "website",
   "private": true,
-  "description": "The website of Elixus",
-  "main": "index.js",
+  "version": "0.0.0",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --mode development",
-    "build": "NODE_ENV=production webpack --config webpack.prod.js --mode production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/elixus/website.git"
-  },
-  "author": "Wannes Gennar <wannes.gennar@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/elixus/website/issues"
-  },
-  "homepage": "https://github.com/elixus/website#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.1.1",
-    "css-loader": "^4.3.0",
-    "html-webpack-plugin": "^4.5.0",
-    "mini-css-extract-plugin": "^0.11.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "postcss": "^8.1.0",
-    "postcss-loader": "^4.0.2",
-    "terser-webpack-plugin": "^4.2.2",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {
-    "tailwindcss": "^2.0.1"
+    "autoprefixer": "^10.4.7",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.9"
   }
 }
