@@ -1,0 +1,109 @@
+---
+import { Image } from 'astro:assets';
+import Rust from '../assets/rust-logo-blk.svg';
+import Elixir from '../assets/elixir.webp';
+import Phoenix from '../assets/phoenix.png';
+import AstroLogo from '../assets/astro.svg';
+import Tailwind from '../assets/tailwind.svg';
+import Postgres from '../assets/postgres.png';
+import Podman from '../assets/podman.webp';
+import Flutter from '../assets/flutter.webp';
+import Dotnet from '../assets/dotnet-logo.png';
+import Sqlserver from '../assets/sqlserver.webp';
+---
+
+<!-- Technologies Section -->
+<section id="technologies" class="py-24 bg-white dark:bg-slate-950">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+				Technologies we use
+			</h2>
+			<p class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+				Modern, proven technologies adapted to your specific needs
+			</p>
+		</div>
+
+		<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+			<!-- Rust -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-orange-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Rust} alt="Rust logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Rust</span>
+			</div>
+
+			<!-- Elixir -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500 dark:hover:border-purple-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Elixir} alt="Elixir logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Elixir</span>
+			</div>
+
+			<!-- Phoenix -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-orange-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Phoenix} alt="Phoenix logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Phoenix</span>
+			</div>
+
+			<!-- Astro -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-pink-500 dark:hover:border-pink-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={AstroLogo} alt="Astro logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Astro</span>
+			</div>
+
+			<!-- TailwindCSS -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-cyan-500 dark:hover:border-cyan-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Tailwind} alt="Tailwind logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">TailwindCSS</span>
+			</div>
+
+			<!-- PostgreSQL -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-blue-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Postgres} alt="Postgres logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">PostgreSQL</span>
+			</div>
+
+			<!-- Docker -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-blue-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Podman} alt="Podman logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Podman</span>
+			</div>
+
+			<!-- Flutter -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 dark:hover:border-blue-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Flutter} alt="Flutter logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Flutter</span>
+			</div>
+
+			<!-- .NET Core -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-purple-500 dark:hover:border-purple-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Dotnet} alt=".NET logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">.NET</span>
+			</div>
+
+			<!-- SQL Server -->
+			<div class="flex flex-col items-center p-6 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-red-500 dark:hover:border-red-500 group">
+				<div class="w-16 h-16 mb-3 group-hover:scale-110">
+					<Image src={Sqlserver} alt="Sqlserver logo" />
+				</div>
+				<span class="text-sm font-medium text-slate-700 dark:text-slate-300">SQL Server</span>
+			</div>
+		</div>
+	</div>
+</section>

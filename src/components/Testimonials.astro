@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import Louis from '../assets/louis.jpg';
+---
+
+<!-- Testimonials Section -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-4">
+				What clients say
+			</h2>
+		</div>
+
+		<div class="grid md:grid-cols-2 gap-8">
+			<!-- Testimonial 1 -->
+			<div class="p-8 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+				<blockquote class="text-lg text-slate-700 dark:text-slate-300 mb-6">
+					Incredibly adaptable, quick-witted and a savant in diagnosing coding problems and subsequently solving them.
+					Wannes' coding ability is second to none. Whilst developing my portfolio, I consulted Wannes often and he
+					helped take the project to the next level.
+				</blockquote>
+				<div class="flex items-center gap-4">
+					<Image class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold" src={Louis} alt="Louis" />
+					<div>
+						<div class="font-semibold text-slate-900 dark:text-slate-100">Louis Van Keymeulen</div>
+						<div class="text-sm text-slate-600 dark:text-slate-400">Developer</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-8 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+				<!-- Testimonial 2 -->
+				<blockquote class="text-lg text-slate-700 dark:text-slate-300 mb-6">
+					Wannes is a passionate teacher with a strong knowledge of the full .NET stack.
+					He succeeds in explaining technical aspects in a clear manner.
+					It would be a dream to have him work as a coach on projects.
+				</blockquote>
+				<div class="flex items-center gap-4">
+					<div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold">
+						KP
+					</div>
+					<div>
+						<div class="font-semibold text-slate-900 dark:text-slate-100">Klaas Proost</div>
+						<div class="text-sm text-slate-600 dark:text-slate-400">EventPay</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

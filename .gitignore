@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Local AI files
+.claude/settings.local.json
+.mcp.json
+.playwright-mcp
